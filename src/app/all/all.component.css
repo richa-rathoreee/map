@@ -1,0 +1,19 @@
+form{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    /* justify-items: center; */
+    
+}
+.container{
+    border: black 2px solid;
+    margin: 100px ;
+    padding: 50px;
+}
+.container>div{
+    padding: 10px;
+}
+
+.alert-error{
+    color: red;
+}

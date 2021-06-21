@@ -1,0 +1,84 @@
+<!-- <p-sidebar [(visible)]="display" position=bottom [appendTo]="mydiv" [modal]="false"
+  [style]="{'width': '100%'}">
+  <i class="fas fa-chevron-left"></i>
+
+  <i class="fas fa-chevron-right"></i>
+  <div class="sidebar">
+    <img
+      src='https://images.unsplash.com/photo-1561780339-45013972bece?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3RhcmJ1Y2tzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+      alt='no img found'>
+
+    <p>12345</p>
+  </div>
+</p-sidebar> -->
+
+
+
+<div class="radio-style" id="style-selector-control">
+  <div *ngFor="let style of mapStyle" class="style-selector">
+
+    <input type="radio" name=styl value={{style}} (change)="styleChange($event)">
+    <i>{{style}}</i>
+
+
+  </div>
+</div>
+
+<div class="dis-style" id="dis-style-control">
+
+  Origin:<p id="origin"></p>
+  Destination:<p id="destination"></p>
+  Distance: <p id="distance"></p><span>in meters</span>
+</div>
+<div class="control" id="arrow-control">
+  <i class="fas fa-arrows-alt"></i>
+  <i class="fas fa-external-link-alt"></i>
+  <i class="fas fa-undo" id="fa-undo"></i>
+  <i class="fas fa-ellipsis-v"></i>
+
+
+</div>
+<div class="control-two" id="street-control">
+  <i class="fas fa-street-view"></i>
+</div>
+<div class="control-two" id="filter">
+  <i class="fas fa-filter"></i>
+</div>
+<div class="control-two" id="ruler">
+  <i class="fas fa-ruler"></i>
+  <i class="fas fa-map-marked-alt"></i>
+  <i class="fas fa-pencil-alt"></i>
+
+
+</div>
+<div class="control-two" id="lock">
+  <i class="fas fa-unlock"></i>
+  <i class="fas fa-plus" id="fa-plus"></i>
+  <i class="fas fa-minus"></i>
+
+</div>
+
+<div class="container">
+
+  <div id="map"></div>
+  <!-- <div #mydiv class=""></div> -->
+  <p-sidebar [(visible)]="display" 
+
+  position=bottom
+   [modal]="false" 
+   [style]="{'width': '100%' ,'position':'absolute' }">
+    <div class="sidebar">
+      <img
+        src='https://images.unsplash.com/photo-1561780339-45013972bece?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3RhcmJ1Y2tzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+        alt='no img found' width='200px' height='100px'>
+      <div>
+      <p>12345</p>
+      <p>Global coffee co,road</p>
+
+
+      </div>
+      
+    </div>
+  </p-sidebar>
+
+</div>

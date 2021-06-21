@@ -1,0 +1,108 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+#map{
+    height:80vh;
+    /* width: 100%;
+    position: absolute; */
+}
+.dis-style{
+    background-color: black;
+    opacity: 0.8;
+    font-size: large;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    
+}
+.radio-style{
+    display:flex;
+    flex-direction: row;
+    background-color: black;
+    padding: 5px;
+    opacity: 0.8;
+    font-size: larger;
+    color: #fff;
+}
+.control{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+
+    
+    padding: 5px;
+    /* border: 2px brown solid; */
+    border-radius: 4px;
+    margin: 20px;
+    position: relative;
+    
+
+}
+.control>i{
+    color:grey;
+    font-size: 16px;
+    padding: 5px;
+}
+.control-two{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+    
+    padding: 2px;
+    /* border: 2px brown solid; */
+    border-radius: 4px;
+    margin: 11px;
+    position: relative;
+    
+
+}
+.control-two>i{
+    color:grey;
+    font-size: 16px;
+    padding: 2px;
+}
+.container{
+    height: 80vh;
+    width: 50%;
+    display: grid;
+    margin:0 auto;
+    position:relative;
+     grid-template-rows:  1fr auto;
+
+
+}
+
+
+
+::ng-deep .p-sidebar .p-sidebar-header {
+    padding: 0px
+}
+
+
+::ng-deep .p-sidebar-bottom{
+    height:1rem;
+    border-radius: 5px;
+    /* position: absolute; */
+}
+.sidebar{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+}
+.sidebar>img{
+    border-radius: 2px;
+    height: 100px;
+    width: 8vw;
+}
+::ng-deep .p-sidebar-left {
+    /* top:800px; */
+}
+::ng-deep .p-sidebar {
+    /* position: absolute; */
+    border:2px rgba(206, 181, 181, 0.068) solid
+   
+}
